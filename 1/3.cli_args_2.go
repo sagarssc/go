@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main(){
@@ -12,6 +13,8 @@ func main(){
 		sep = " "
 	}
 	fmt.Println(s)
+	fmt.Println(strings.Join(os.Args[1:], " "))
+	fmt.Println(os.Args[1:])
 }
 
 // go run 3.cli_args_2.go hellooooo how are you

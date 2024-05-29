@@ -24,10 +24,14 @@ for {
 
 }
 
-defining var:
-    var x string
-    x = "hi"
+defining Variable
 
-defining temp var:
-    x := "hi"
+i) x := ""
+ii) var x string
+iii) var x = ""
+iv) var x string = ""
 
+i) first form is short variable declaration, most compact but it may be used only with in a function not for package level variable
+ii) Second form relies on the default initialization of the zero value which is "" for string
+iii) Third form rarely used except when declaring multiple variable
+iv) forth form is explicit about the variable's type, which is redundant when it is same as the initial value but necessary in other cases where they are not of the same type

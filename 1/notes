@@ -35,3 +35,19 @@ i) first form is short variable declaration, most compact but it may be used onl
 ii) Second form relies on the default initialization of the zero value which is "" for string
 iii) Third form rarely used except when declaring multiple variable
 iv) forth form is explicit about the variable's type, which is redundant when it is same as the initial value but necessary in other cases where they are not of the same type
+
+
+
+Verbs in Go:
+    for repersenting variables
+
+%d              Decimal Integer
+%x, %o, %b      Integer in HexaDeciaml, Octal, Binary
+%f, %g, %e      floating-p oint number: 3.141593 3.141592653589793 3.141593e+00
+%t              boole an: true or false
+%c              rune (Unicode code point)
+%s              string
+%q              quoted str ing "abc" or rune 'c'
+%v              any value in a natural for mat
+%T              type of any value
+%%              literal percent sig n (no operand)
